@@ -209,11 +209,34 @@
         display: none;
       }
     }
+
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --accent-color: #0066cc;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    a {
+      color: var(--accent-color);
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --accent-color: #66ccff;
+    }
   </style>
 </head>
 
 <body>
   <header>
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
     <button onclick="window.print()" class="print-btn">🖨️ Print CV</button>
     <img src="profile.jpg" alt="Mochamad Rizki Profile Photo" class="profile-photo" />
     <h1>Mochamad Rizki</h1>
@@ -309,6 +332,11 @@
     <p>© 2025 Mochamad Rizki. Available for freelance or remote work.</p>
   </footer>
 
-</body>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 
+</body>
 </html>
