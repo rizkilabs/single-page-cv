@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mochamad Rizki - CV</title>
+  <title>Mochamad Rizki - Web Developer CV</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,6 +13,13 @@
       padding: 20px;
       background-color: #f9f9f9;
       color: #333;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: 800px;
+      margin: auto;
     }
 
     header,
@@ -52,26 +59,17 @@
       text-decoration: underline;
     }
 
-    footer p {
-      margin: 5px 0;
-    }
-
-    /* Responsive 2-column layout for Skills and Experience (Desktop only) */
     .flex-two-columns {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .flex-two-columns>div {
-      flex: 1;
+    .flex-two-columns>section {
+      flex: 1 1 300px;
     }
 
-    /* Stack columns on smaller screens */
-    @media (max-width: 768px) {
-      .flex-two-columns {
-        flex-direction: column;
-      }
-
+    @media (max-width: 600px) {
       body {
         padding: 10px;
       }
@@ -91,59 +89,59 @@
     <h1>Mochamad Rizki</h1>
     <p><strong>Full Stack Web Developer</strong></p>
     <p>
-      Email: <a href="mailto:rizkilabs.dev@gmail.com">rizkilabs.dev@gmail.com</a> |
+      Email: <a href="mailto:rizkilabs.dev@gmail.com">rizkilabs.dev@gmail.com</a><br>
       Phone: <a href="tel:+6281234567890">+62 812-3456-7890</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/rizkilabs" target="_blank">linkedin.com/in/rizkilabs</a> |
+      LinkedIn: <a href="https://linkedin.com/in/rizkilabs" target="_blank">linkedin.com/in/rizkilabs</a><br>
       Portfolio: <a href="https://rizkilabs.com" target="_blank">rizkilabs.com</a>
     </p>
   </header>
 
-  <section id="summary">
-    <h2>Professional Summary</h2>
-    <p>
-      Passionate and detail-oriented Full Stack Web Developer with a strong foundation in both front-end and back-end
-      technologies including React, Laravel, Node.js, and MySQL. Proven ability to design and develop scalable web
-      applications, with a focus on clean code, performance, and user experience.
-    </p>
-  </section>
-
-  <section class="flex-two-columns">
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript (ES6+)</li>
-        <li>React.js, Vue.js</li>
-        <li>Node.js (Express), Laravel</li>
-        <li>MySQL, PostgreSQL</li>
-        <li>Git, GitHub, Postman</li>
-        <li>phpMyAdmin, pgAdmin</li>
-      </ul>
+  <main>
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Passionate and detail-oriented Full Stack Web Developer with experience in building scalable web applications
+        using React, Laravel, and Node.js. Skilled in both frontend and backend technologies and dedicated to clean,
+        efficient code.
+      </p>
     </section>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="job">
-        <h3>IT Back Office Developer</h3>
-        <p><strong>PT. Nusantara Sejahtera Raya (Cinema XXI)</strong> | Jan 2022 – Present</p>
+    <div class="flex-two-columns">
+      <section id="skills">
+        <h2>Skills</h2>
         <ul>
-          <li>Developed and maintained internal web applications using Laravel and Vue.js.</li>
-          <li>Managed MySQL and PostgreSQL databases to support data-driven systems.</li>
-          <li>Collaborated with cross-functional teams to automate reporting workflows.</li>
-          <li>Provided technical support and documentation for internal IT tools.</li>
+          <li>HTML, CSS, JavaScript (ES6+)</li>
+          <li>React.js, Vue.js</li>
+          <li>Node.js (Express), Laravel</li>
+          <li>MySQL, PostgreSQL</li>
+          <li>Git, GitHub, Postman</li>
         </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+          <h3>IT Back Office Developer</h3>
+          <p><strong>PT. Nusantara Sejahtera Raya (Cinema XXI)</strong><br>
+            Jan 2022 – Present</p>
+          <ul>
+            <li>Developed and maintained internal applications with Laravel and Vue.js.</li>
+            <li>Managed MySQL/PostgreSQL databases for internal systems.</li>
+            <li>Automated reports and optimized workflows.</li>
+            <li>Provided internal IT tool documentation and support.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Full Stack Web Development</h3>
+        <p><strong>Binar Academy</strong> | Graduated: 2022</p>
       </div>
     </section>
-
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>Full Stack Web Development</h3>
-      <p><strong>Binar Academy</strong> | Graduated: 2022</p>
-    </div>
-  </section>
+  </main>
 
   <footer id="contact">
     <h2>Contact</h2>
