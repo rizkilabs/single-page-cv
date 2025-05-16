@@ -4,226 +4,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mochamad Rizki - Web Developer CV</title>
-  <!-- Basic SEO -->
   <title>Mochamad Rizki – Full Stack Web Developer</title>
   <meta name="description"
     content="Mochamad Rizki's professional CV – Full Stack Web Developer skilled in React, Laravel, Node.js, and MySQL.">
   <meta name="keywords" content="Mochamad Rizki, Full Stack Developer, Web Developer, React, Laravel, CV, Resume">
   <meta name="author" content="Mochamad Rizki">
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Mochamad Rizki – Full Stack Web Developer">
   <meta property="og:description"
     content="Check out Mochamad Rizki's professional CV – Full Stack Web Developer with experience in React, Laravel, and Node.js.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rizkilabs.com/cv.html">
   <meta property="og:image" content="https://rizkilabs.com/images/rizki-cv-preview.jpg">
-  <!-- Use an actual image URL -->
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mochamad Rizki – Full Stack Web Developer">
   <meta name="twitter:description" content="View my developer CV – skills in Laravel, React, Node.js & more.">
   <meta name="twitter:image" content="https://rizkilabs.com/images/rizki-cv-preview.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header,
-    main,
-    footer {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    header,
-    section,
-    footer {
-      margin-bottom: 30px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
-
-    h1 {
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 0;
-    }
-
-    h3 {
-      margin: 10px 0 5px;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: 'Poppins', sans-serif;
-    }
-
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .flex-two-columns {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .flex-two-columns>section {
-      flex: 1 1 300px;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-
-      header,
-      section,
-      footer {
-        padding: 15px;
-      }
-    }
-
-    .download-btn {
-      display: inline-block;
-      background-color: #0066cc;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .download-btn:hover {
-      background-color: #004c99;
-    }
-
-    .profile-photo {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #0066cc;
-      display: block;
-      margin: 0 auto 15px;
-    }
-
-    i {
-      margin-right: 8px;
-      color: #0066cc;
-    }
-
-    @media print {
-      body {
-        background: white;
-        color: black;
-        font-size: 12pt;
-        line-height: 1.4;
-        margin: 0;
-        padding: 0;
-      }
-
-      * {
-        box-shadow: none !important;
-        text-shadow: none !important;
-        background: transparent !important;
-      }
-
-      a::after {
-        content: "";
-        /* Hide long URLs after links */
-      }
-
-      .download-btn,
-      nav,
-      footer {
-        display: none !important;
-        /* Hide elements not needed on paper */
-      }
-
-      header,
-      main,
-      section {
-        page-break-inside: avoid;
-        /* Prevent awkward breaks */
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      h1,
-      h2,
-      h3 {
-        page-break-after: avoid;
-      }
-
-      @page {
-        margin: 1in;
-      }
-    }
-
-    .print-btn {
-      background: #0066cc;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    @media print {
-      .print-btn {
-        display: none;
-      }
-    }
-
     :root {
       --bg-color: #ffffff;
-      --text-color: #333333;
+      --text-color: #333;
       --accent-color: #0066cc;
     }
 
     body {
+      font-family: 'Poppins', sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
       transition: background 0.3s, color 0.3s;
-    }
-
-    a {
-      color: var(--accent-color);
     }
 
     body.dark-mode {
@@ -231,105 +52,194 @@
       --text-color: #e0e0e0;
       --accent-color: #66ccff;
     }
+
+    header,
+    footer {
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--accent-color);
+      margin-top: 30px;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+      color: var(--accent-color);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button-group {
+      margin: 20px 0;
+    }
+
+    .download-btn,
+    .dark-mode-toggle {
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .download-btn:hover,
+    .dark-mode-toggle:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+        margin: 0;
+      }
+
+      .download-btn,
+      .dark-mode-toggle {
+        display: none !important;
+      }
+
+      * {
+        box-shadow: none !important;
+        background: transparent !important;
+      }
+
+      a::after {
+        content: "";
+      }
+
+      section,
+      header,
+      footer {
+        page-break-inside: avoid;
+      }
+
+      @page {
+        margin: 1in;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <header>
-    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
-    <button onclick="window.print()" class="print-btn">🖨️ Print CV</button>
-    <img src="profile.jpg" alt="Mochamad Rizki Profile Photo" class="profile-photo" />
+    <img src="profile.jpg" alt="Mochamad Rizki" class="profile-photo">
     <h1>Mochamad Rizki</h1>
     <p><strong>Full Stack Web Developer</strong></p>
-    <p>
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:rizkilabs.dev@gmail.com">rizkilabs.dev@gmail.com</a>
-    </p>
-    <p>
-      <i class="fas fa-phone"></i>
-      <a href="tel:+6281234567890">+62 812-3456-7890</a>
-    </p>
-    <p>
-      <i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/rizkilabs" target="_blank">linkedin.com/in/rizkilabs</a>
-    </p>
-    <p>
-      <i class="fas fa-globe"></i>
-      <a href="https://rizkilabs.com" target="_blank">rizkilabs.com</a>
-    </p>
 
-    <p>
-      <a href="Mochamad-Rizki-CV.pdf" download class="download-btn">📄 Download CV (PDF)</a>
-    </p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i><a href="mailto:rizkilabs.dev@gmail.com">rizkilabs.dev@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i><a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+      <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/rizkilabs"
+          target="_blank">linkedin.com/in/rizkilabs</a></p>
+      <p><i class="fas fa-globe"></i><a href="https://rizkilabs.com" target="_blank">rizkilabs.com</a></p>
+    </div>
+
+    <div class="button-group">
+      <a href="cv.pdf" class="download-btn" download><i class="fas fa-download"></i> Download CV</a>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    </div>
   </header>
 
   <main>
-    <section id="summary">
+    <section>
       <h2>Professional Summary</h2>
-      <p>
-        Passionate and detail-oriented Full Stack Web Developer with experience in building scalable web applications
-        using React, Laravel, and Node.js. Skilled in both frontend and backend technologies and dedicated to clean,
-        efficient code.
-      </p>
+      <p>I am a passionate Full Stack Web Developer with experience in React, Vue, Laravel, and Node.js. I enjoy
+        building web applications that are clean, scalable, and user-friendly.</p>
     </section>
 
-    <div class="flex-two-columns">
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript (ES6+)</li>
-          <li>React.js, Vue.js</li>
-          <li>Node.js (Express), Laravel</li>
-          <li>MySQL, PostgreSQL</li>
-          <li>Git, GitHub, Postman</li>
-        </ul>
-      </section>
+    <section>
+      <h2>Work Experience</h2>
+      <h3>IT Back Office Developer – PT. Nusantara Sejahtera Raya (Cinema XXI)</h3>
+      <p><em>2022 – Present</em></p>
+      <ul>
+        <li>Developed internal web systems using Laravel and Vue.js.</li>
+        <li>Improved data management efficiency through automation.</li>
+        <li>Collaborated with teams to deploy scalable features.</li>
+      </ul>
+    </section>
 
-      <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-          <h3>IT Back Office Developer</h3>
-          <p><strong>PT. Nusantara Sejahtera Raya (Cinema XXI)</strong><br>
-            Jan 2022 – Present</p>
-          <ul>
-            <li>Developed and maintained internal applications with Laravel and Vue.js.</li>
-            <li>Managed MySQL/PostgreSQL databases for internal systems.</li>
-            <li>Automated reports and optimized workflows.</li>
-            <li>Provided internal IT tool documentation and support.</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <section id="education">
+    <section>
       <h2>Education</h2>
-      <div class="education-item">
-        <h3>Full Stack Web Development</h3>
-        <p><strong>Binar Academy</strong> | Graduated: 2022</p>
-      </div>
+      <p><strong>Binar Academy</strong> – Full Stack Web Development Bootcamp (2022)</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend: React.js, Vue.js</li>
+        <li>Backend: Laravel, Node.js (Express)</li>
+        <li>Database: MySQL, PostgreSQL</li>
+        <li>Tools: Git, Postman, phpMyAdmin, pgAdmin</li>
+      </ul>
     </section>
   </main>
 
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:rizkilabs.dev@gmail.com">rizkilabs.dev@gmail.com</a>
-    </p>
-    <p>
-      <i class="fas fa-phone"></i>
-      <a href="tel:+6281234567890">+62 812-3456-7890</a>
-    </p>
-    <p>
-      <i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/rizkilabs" target="_blank">linkedin.com/in/rizkilabs</a>
-    </p>
-    <p>
-      <i class="fas fa-globe"></i>
-      <a href="https://rizkilabs.com" target="_blank">rizkilabs.com</a>
-    </p>
-
-    <p>© 2025 Mochamad Rizki. Available for freelance or remote work.</p>
+  <footer>
+    <p>&copy; 2025 Mochamad Rizki — All rights reserved.</p>
   </footer>
 
   <script>
@@ -339,4 +249,5 @@
   </script>
 
 </body>
+
 </html>
