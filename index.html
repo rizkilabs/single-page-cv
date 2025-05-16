@@ -119,12 +119,80 @@
       margin-right: 8px;
       color: #0066cc;
     }
+
+    @media print {
+      body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        background: transparent !important;
+      }
+
+      a::after {
+        content: "";
+        /* Hide long URLs after links */
+      }
+
+      .download-btn,
+      nav,
+      footer {
+        display: none !important;
+        /* Hide elements not needed on paper */
+      }
+
+      header,
+      main,
+      section {
+        page-break-inside: avoid;
+        /* Prevent awkward breaks */
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+
+      @page {
+        margin: 1in;
+      }
+    }
+
+    .print-btn {
+      background: #0066cc;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    @media print {
+      .print-btn {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-
   <header>
+    <button onclick="window.print()" class="print-btn">🖨️ Print CV</button>
     <img src="profile.jpg" alt="Mochamad Rizki Profile Photo" class="profile-photo" />
     <h1>Mochamad Rizki</h1>
     <p><strong>Full Stack Web Developer</strong></p>
