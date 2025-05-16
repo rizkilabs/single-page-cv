@@ -56,7 +56,22 @@
       margin: 5px 0;
     }
 
-    @media (max-width: 600px) {
+    /* Responsive 2-column layout for Skills and Experience (Desktop only) */
+    .flex-two-columns {
+      display: flex;
+      gap: 20px;
+    }
+
+    .flex-two-columns>div {
+      flex: 1;
+    }
+
+    /* Stack columns on smaller screens */
+    @media (max-width: 768px) {
+      .flex-two-columns {
+        flex-direction: column;
+      }
+
       body {
         padding: 10px;
       }
@@ -92,30 +107,34 @@
     </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript (ES6+)</li>
-      <li>React.js, Vue.js</li>
-      <li>Node.js (Express), Laravel</li>
-      <li>MySQL, PostgreSQL</li>
-      <li>Git, GitHub, Postman</li>
-      <li>phpMyAdmin, pgAdmin</li>
-    </ul>
-  </section>
+  <section class="flex-two-columns">
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <div class="job">
-      <h3>IT Back Office Developer</h3>
-      <p><strong>PT. Nusantara Sejahtera Raya (Cinema XXI)</strong> | Jan 2022 – Present</p>
+    <section id="skills">
+      <h2>Skills</h2>
       <ul>
-        <li>Developed and maintained internal web applications using Laravel and Vue.js.</li>
-        <li>Managed MySQL and PostgreSQL databases to support data-driven systems.</li>
-        <li>Collaborated with cross-functional teams to automate reporting workflows.</li>
-        <li>Provided technical support and documentation for internal IT tools.</li>
+        <li>HTML, CSS, JavaScript (ES6+)</li>
+        <li>React.js, Vue.js</li>
+        <li>Node.js (Express), Laravel</li>
+        <li>MySQL, PostgreSQL</li>
+        <li>Git, GitHub, Postman</li>
+        <li>phpMyAdmin, pgAdmin</li>
       </ul>
-    </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>IT Back Office Developer</h3>
+        <p><strong>PT. Nusantara Sejahtera Raya (Cinema XXI)</strong> | Jan 2022 – Present</p>
+        <ul>
+          <li>Developed and maintained internal web applications using Laravel and Vue.js.</li>
+          <li>Managed MySQL and PostgreSQL databases to support data-driven systems.</li>
+          <li>Collaborated with cross-functional teams to automate reporting workflows.</li>
+          <li>Provided technical support and documentation for internal IT tools.</li>
+        </ul>
+      </div>
+    </section>
+
   </section>
 
   <section id="education">
