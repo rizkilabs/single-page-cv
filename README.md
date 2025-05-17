@@ -31,7 +31,7 @@ A clean, responsive single-page **HTML CV** to showcase the career history, skil
 
 1. Clone or download this repo:
    ```bash
-   git clone https://github.com/yourusername/single-page-cv.git
+   git clone https://github.com/rizkilabs/single-page-cv.git
 
 2. Open `index.html` in your browser.
 
