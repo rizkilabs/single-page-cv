@@ -1,4 +1,4 @@
-# 📄 Mochamad Rizki – HTML CV
+# 📄 Single Page CV
 
 Live Demo: [https://rizkilabs.github.io/single-page-cv/](https://rizkilabs.github.io/single-page-cv/)
 
